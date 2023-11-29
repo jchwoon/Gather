@@ -23,6 +23,11 @@ public class CharacterMovement : MonoBehaviour
     private int downCount = 0;
     private bool isPressingBothY = false;
 
+    public Vector2 MoveMentDirection
+    {
+        get { return _movementDirection; }
+    }
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
